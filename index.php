@@ -10,6 +10,7 @@ try {
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     foreach($products as $product){
         echo $product['name']. "<br>";
+        echo $product['email']. "<br>";
     }
 
     echo "Connected successfully";
